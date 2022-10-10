@@ -35,22 +35,15 @@ public class BitMap {
     }
 
     public int Select(int j) {
+
         int cont=0;
-        int i=0;
         while(cont==j){
+            int i=0;
             if(p[i]==1){
                 cont++;
             }
             i++;
-
-
         }
-        if(cont<j){
-            return -1;
-        }else{
-            return i;
-        }
+        return cont;
     }
-
-
 }
