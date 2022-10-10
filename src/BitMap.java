@@ -24,6 +24,16 @@ public class BitMap {
         return p[i];
     }
 
+    public int Rank(int i){
+        int cont=0;
+        for (int j=0;j>p.length;j++){
+            if (p[j] == 1) {
+                cont++;
+            }
+        }
+        return cont;
+    }
+
 
 
 }
