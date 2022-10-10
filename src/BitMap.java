@@ -2,14 +2,13 @@ public class BitMap {
 
 
     private int tope;
-    private Byte p[];
-
+    private byte p[];
 
 
     //Constructor
     BitMap(int size){
         tope=-1;
-        p=new Byte[size];
+        p=new byte[size];
 
     }
 
@@ -21,7 +20,7 @@ public class BitMap {
         p[i]=0;
     }
 
-    public Byte access(int i){
+    public byte access(int i){
         return p[i];
     }
 
