@@ -43,6 +43,7 @@ public class BitMap {
             }
             i++;
 
+
         }
         if(cont<j){
             return -1;
