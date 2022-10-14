@@ -36,18 +36,31 @@ public class BitMap {
         return cont;
     }
 
-    public int Select(int j){
+    public int Select(int j) {
 
+        int pos = 0;
+        int cont = 0;
 
-
-
+        for (int i = 0; i < size; i++) {
+            if (cont < j) {
+                if (list[i] == 1) {
+                    cont++;
+                    pos = i;
+                }
+            }
+        }
+        if (cont == j) {
+            return pos;
+        }
+        return -1;
 
     }
 
 
 
+}
 
-    }
+
 
 
 
