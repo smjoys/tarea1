@@ -1,49 +1,59 @@
 public class BitMap {
 
+    //Clase nodo
+    public class Nodo{
+        int info;
+        Nodo next;
+    }
 
-    private int tope;
-    private byte p[];
-
+    //Atributos de la lista
+    Nodo raiz;
+    int size;
 
     //Constructor
-    BitMap(int size){
-        tope=-1;
-        p=new byte[size];
+    public BitMap(){
 
+        raiz=null;
+        int size=0;
     }
 
-    public void on(int i){
-        p[i]=1;
-    }
+    public void On(int i){
+        Nodo aux = this.raiz;
 
-    public void off(int i){
-        p[i]=0;
-    }
 
-    public byte access(int i){
-        return p[i];
-    }
-
-    public int Rank(int i){
-        int cont=0;
-        for (int j=0;j>p.length;j++){
-            if (p[j] == 1) {
-                cont++;
-            }
+        for(int j = 0; j < i - 1; ++j) {
+            aux = aux.next;
         }
-        return cont;
+
     }
 
-    public int Select(int j) {
 
-        int cont=0;
-        while(cont==j){
-            int i=0;
-            if(p[i]==1){
-                cont++;
-            }
-            i++;
-        }
-        return cont;
-    }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
