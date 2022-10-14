@@ -28,6 +28,7 @@ public class BitMap {
 
     public int Rank(int i){
         int cont=0;
+
         for (int j=0; j< i;j++){
             if(list[j]==1) {
                 cont++;
@@ -50,7 +51,7 @@ public class BitMap {
             }
         }
         if (cont == j) {
-            return pos+1;
+            return pos;
         }
         return -1;
 
