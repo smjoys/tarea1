@@ -3,7 +3,7 @@ public class DinArray {
 
     }
 
-    public boolean Insertar(int x){}
+
 
 
 }

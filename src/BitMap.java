@@ -50,7 +50,7 @@ public class BitMap {
             }
         }
         if (cont == j) {
-            return pos;
+            return pos+1;
         }
         return -1;
 
