@@ -3,14 +3,10 @@ public class DinArray {
 
     //Atributos
     private int s[];
-
-
-
     //Constructor
     DinArray(int size){
 
-        int ni = (int) Math.ceil(size/32);
-        s=new int [ni];
+        s=new int [size];
 
     }
 
