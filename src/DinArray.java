@@ -13,12 +13,19 @@ public class DinArray {
 
     }
 
-    public boolean Insertar(int x){
-
+    public boolean Insertar(int x,int pos){
+        /*
         for (int i = 0; i <s.length; i++) {
             if(s[i]==0){
                 s[i]=x;
+                return true;
             }
+        }
+        return false;
+
+         */
+        if (pos>1) {
+            s[pos] =x;
             return true;
         }
         return false;
@@ -48,12 +55,13 @@ public class DinArray {
     public int Esta(int x){
         int pos=0;
         for (int i = 0; i <s.length ; i++) {
-            if(s[i]==x){
-                pos=i;
+            if (s[i] == x) {
+                return i;
             }
-            return pos;
+
         }
             return -1;
+
 
     }
 

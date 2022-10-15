@@ -8,11 +8,13 @@ public class TestDinArray {
         BitMap b=new BitMap(288);
 
 
-
-
-
-        s.Insertar(64);
-
+        int c;
+        b.On(4);
+        if (b.Select(1)>1) {
+            c=b.Select(1);
+            s.Insertar(23,c);
+            b.Off(c);
+        }
 
 
         System.out.print("las posiciones: ");
@@ -31,12 +33,12 @@ public class TestDinArray {
         }
 
         System.out.println();
-        System.out.println("En que posicion esta el 64:" + s.Esta(64));
+        System.out.println("En que posicion esta el 23:" + s.Esta(23));
         System.out.println();
-        System.out.println("Elemento de el DinArray" +s.Size());
+        System.out.println("Elementos de el DinArray: " +s.Size());
         System.out.println();
-        System.out.println("Eliminando 64");
-        s.Eliminar(64);
+        System.out.println("Eliminando 23");
+        s.Eliminar(23);
 
         System.out.println();
         System.out.println();
