@@ -2,23 +2,23 @@ public class DinArray {
 
 
     //Atributos
-    private int b[];
+    private int s[];
 
-    private int size;
+
 
     //Constructor
     DinArray(int size){
 
         int ni = (int) Math.ceil(size/32);
-        b=new int [ni];
-        this.size=size;
+        s=new int [ni];
+
     }
 
     public boolean Insertar(int x){
 
-        for (int i = 0; i <size ; i++) {
-            if(b[i]==0){
-                b[i]=x;
+        for (int i = 0; i <s.length; i++) {
+            if(s[i]==0){
+                s[i]=x;
             }
             return true;
         }
@@ -27,9 +27,9 @@ public class DinArray {
 
 
     public void Eliminar(int x){
-        for (int i = 0; i <size ; i++) {
-            if(b[i]==x){
-                b[i]=0;
+        for (int i = 0; i <s.length ; i++) {
+            if(s[i]==x){
+                s[i]=0;
             }
         }
 
@@ -37,9 +37,9 @@ public class DinArray {
 
     public int Size(){
         int cont=0;
-        for (int i = 0; i <size ; i++) {
-            if(b[i]!=0){
-            cont++;
+        for (int i = 0; i <s.length ; i++) {
+            if(s[i]!=0){
+                cont++;
             }
         }
         return cont;
@@ -48,8 +48,8 @@ public class DinArray {
 
     public int Esta(int x){
         int pos=0;
-        for (int i = 0; i <size ; i++) {
-            if(b[i]==x){
+        for (int i = 0; i <s.length ; i++) {
+            if(s[i]==x){
                 pos=i;
             }
             return pos;

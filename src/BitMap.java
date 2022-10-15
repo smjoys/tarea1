@@ -3,26 +3,26 @@ public class BitMap {
 
 
     //Atributos de la lista
-    private byte list[];
-    private int size;
+    private byte b[];
+
     //Constructor
     public BitMap(int size) {
 
-        list=new byte[size];
-        this.size=size;
+        b=new byte[size];
+
     }
 
     //Metodos
     public void On(int i){
-        list[i]=1;
+       b[i]=1;
     }
 
     public void Off(int i){
-        list[i]=0;
+        b[i]=0;
     }
 
     public byte Access(int i){
-        return list[i];
+        return b[i];
 
     }
 
@@ -30,7 +30,7 @@ public class BitMap {
         int cont=0;
 
         for (int j=0; j< i;j++){
-            if(list[j]==1) {
+            if(b[j]==1) {
                 cont++;
             }
         }
@@ -42,9 +42,9 @@ public class BitMap {
         int pos = 0;
         int cont = 0;
 
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < b.length; i++) {
             if (cont < j) {
-                if (list[i] == 1) {
+                if (b[i] == 1) {
                     cont++;
                     pos = i;
                 }
@@ -58,23 +58,7 @@ public class BitMap {
     }
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
