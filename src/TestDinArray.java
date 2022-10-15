@@ -9,12 +9,17 @@ public class TestDinArray {
 
         int c,x;
 
-        b.On(8);
 
-        c = b.Access(1);
+        c = b.Access(0);
+        b.On(c);
         s.Insertar(c);
         b.Off(c);
 
+
+        for (int i = 0; i < 9; i++) {
+            System.out.print("[" + i+ "]");
+        }
+        System.out.println();
         for (int i = 0; i < 9; i++) {
             System.out.print("[" + s.Mostrar(i)+ "]");
         }
