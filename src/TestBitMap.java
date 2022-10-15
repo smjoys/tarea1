@@ -1,7 +1,7 @@
 public class TestBitMap {
     public static void main(String[] args) {
 
-        BitMap l = new BitMap(9);
+        BitMap l = new BitMap(288);
 
 
 

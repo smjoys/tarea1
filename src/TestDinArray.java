@@ -5,7 +5,7 @@ public class TestDinArray {
 
         DinArray s= new DinArray(9);
 
-        BitMap b=new BitMap(9);
+        BitMap b=new BitMap(288);
 
         int c,x;
 
@@ -17,7 +17,10 @@ public class TestDinArray {
 
         for (int i = 0; i < 9; i++) {
             System.out.print("[" + s.Mostrar(i)+ "]");
-            System.out.println("[" + b.Access(i) + "]");
+        }
+        System.out.println();
+        for (int j =0;j<9;j++){
+            System.out.print("[" + b.Access(j) + "]");
         }
 
 

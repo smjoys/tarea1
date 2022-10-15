@@ -8,7 +8,9 @@ public class BitMap {
     //Constructor
     public BitMap(int size) {
 
-        b=new int [size];
+        int ni = (int)Math.ceil(size/32);
+        b = new int [ni];
+
 
     }
 
