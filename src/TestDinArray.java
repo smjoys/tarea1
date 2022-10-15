@@ -8,15 +8,19 @@ public class TestDinArray {
         BitMap b=new BitMap(9);
 
         int c,x;
-        b.On(1);
-        b.On(2);
+
+        b.On(8);
+
         c = b.Access(1);
         s.Insertar(c);
         b.Off(c);
 
         for (int i = 0; i < 9; i++) {
-            System.out.print("[" + b.Select(i) + "]");
+            System.out.print("[" + s.Mostrar(i)+ "]");
+            System.out.println("[" + b.Access(i) + "]");
         }
+
+
 
     }
 

@@ -3,18 +3,18 @@ public class BitMap {
 
 
     //Atributos de la lista
-    private byte b[];
+    private int b[];
 
     //Constructor
     public BitMap(int size) {
 
-        b=new byte[size];
+        b=new int [size];
 
     }
 
     //Metodos
     public void On(int i){
-       b[i]=1;
+        b[i]=1;
     }
 
     public void Off(int i){
@@ -22,7 +22,7 @@ public class BitMap {
     }
 
     public byte Access(int i){
-        return b[i];
+        return (byte) b[i];
 
     }
 

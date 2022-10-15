@@ -3,10 +3,13 @@ public class DinArray {
 
     //Atributos
     private int s[];
-    //Constructor
-    DinArray(int size){
 
-        s=new int [size];
+
+
+    //Constructor
+    DinArray(int x){
+
+        s=new int [x];
 
     }
 
@@ -51,6 +54,10 @@ public class DinArray {
             return pos;
         }
         return -1;
+    }
+
+    public int Mostrar(int i){
+        return s[i];
     }
 
 
