@@ -7,14 +7,13 @@ public class TestDinArray {
 
         BitMap b=new BitMap(288);
 
-        int c,x;
 
 
 
-        b.On(3);
+
         s.Insertar(64);
-        s.Insertar(-3);
-        b.Off(4);
+
+
 
         System.out.print("las posiciones: ");
         for (int i = 0; i < 9; i++) {
@@ -30,6 +29,9 @@ public class TestDinArray {
         for (int j =0;j<9;j++){
             System.out.print("[" + b.Access(j) + "]");
         }
+
+        System.out.println();
+        System.out.println(s.Esta(64));
 
 
 

@@ -53,7 +53,8 @@ public class DinArray {
             }
             return pos;
         }
-        return -1;
+            return -1;
+
     }
 
     public int Mostrar(int i){
